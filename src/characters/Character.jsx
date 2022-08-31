@@ -13,25 +13,27 @@ export default function Character({ characters }) {
     }, [characters]);
 
     return (
-        <table>
-            <tbody>
-                <tr>
-                    <td>Character name</td>
-                    <td>{mostUnpopular?.name}</td>
-                </tr>
-                <tr>
-                    <td>Origin name</td>
-                    <td>{mostUnpopular?.origin.name}</td>
-                </tr>
-                <tr>
-                    <td>Origin dimension</td>
-                    <td>{mostUnpopular?.location.name}</td>
-                </tr>
-                <tr>
-                    <td>Popularity</td>
-                    <td>{mostUnpopular?.episode.length}</td>
-                </tr>
-            </tbody>
-        </table>
+        <div className="table__wrapper">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Character name</td>
+                        <td>{mostUnpopular?.name}</td>
+                    </tr>
+                    <tr>
+                        <td>Origin name</td>
+                        <td>{mostUnpopular?.origin.name}</td>
+                    </tr>
+                    <tr>
+                        <td>Origin dimension</td>
+                        <td>{mostUnpopular?.location.name}</td>
+                    </tr>
+                    <tr>
+                        <td>Popularity</td>
+                        <td>{mostUnpopular?.episode.length}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     );
 }

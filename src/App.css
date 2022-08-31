@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 80px;
 
     background-color: lightblue;
 }
@@ -41,4 +42,13 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+.table__wrapper {
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+.table__wrapper table {
+    height: 200px;
 }

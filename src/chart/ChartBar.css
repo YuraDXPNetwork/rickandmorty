@@ -1,9 +1,12 @@
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
 .chart-bar {
     display: flex;
 
     height: 500px;
-
-    /* background-color: aliceblue; */
 }
 
 .episodes {
