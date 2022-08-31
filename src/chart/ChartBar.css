@@ -1,0 +1,115 @@
+.chart-bar {
+    display: flex;
+
+    height: 500px;
+
+    /* background-color: aliceblue; */
+}
+
+.episodes {
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+    font-size: 9px;
+}
+
+.episodes span {
+    width: 20px;
+    height: 100px;
+
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.episodes span:nth-last-child(1) {
+    border-bottom: 1px solid black;
+}
+
+.bar {
+    position: relative;
+
+    width: 600px;
+
+    border: 1px solid black;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.character__card {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+
+    width: 300px;
+    height: 200px;
+
+    background-color: #fff;
+
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.32);
+}
+
+.bar__character {
+    padding: 10px;
+
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    font-size: 14px;
+
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+
+    color: #fff;
+}
+.bar span:nth-last-child(1) {
+    border-right: none;
+}
+.character__card {
+    display: flex;
+
+    min-width: 400px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.character__info {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.life-species {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.location,
+.origin {
+    display: flex;
+    flex-direction: column;
+}
+
+.alive,
+.dead {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+}
+
+.alive {
+    background-color: red;
+}
+
+.dead {
+    background-color: greenyellow;
+}
